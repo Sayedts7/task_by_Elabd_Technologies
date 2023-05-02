@@ -96,16 +96,19 @@ class LoginView extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          width: 100,
+                          width: 110,
                           height: 2,
                           color: Colors.white,
                         ),
+                        SizedBox(width: 5),
                         const Text(
-                          ' OR ',
+                          ' Or ',
                           style: TextStyle(fontSize: 14, color: Colors.white),
                         ),
+                        SizedBox(width: 5),
+
                         Container(
-                          width: 100,
+                          width: 110,
                           height: 2,
                           color: Colors.white,
                         ),
@@ -122,22 +125,41 @@ class LoginView extends StatelessWidget {
                           height: 40,
                           width: 40,
                           decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(5),
+
                               border: Border.all(
                                 color: Colors.white
                               )),
 
-                          child: Icon(Icons.apple_outlined, color: Colors.white,),
-                        ),
+                          child: const Padding(
+                            padding: EdgeInsets.all(5.0),
+                            child: Image(
+                              image: AssetImage('assets/g.png'),),
+                          ),),
                         Container(
                             height: 40,
                             width: 40,
-                            decoration: BoxDecoration(border: Border.all( color: Colors.white)),
-                            child: Icon(Icons.facebook_outlined,  color: Colors.white)),
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(5),
+                                border: Border.all( color: Colors.white)),
+                            child:   const Padding(
+                              padding: EdgeInsets.all(5.0),
+                              child: Image(
+                                image: AssetImage('assets/app.png'),),
+                            ),),
                         Container(
                           height: 40,
                           width: 40,
-                          decoration: BoxDecoration(border: Border.all( color: Colors.white)),
-                          child: Icon(Icons.apple_outlined,  color: Colors.white),
+                          decoration: BoxDecoration
+                            (
+                              borderRadius: BorderRadius.circular(5),
+
+                              border: Border.all( color: Colors.white)),
+                          child:  const Padding(
+                            padding: EdgeInsets.all(5.0),
+                            child: Image(
+                              image: AssetImage('assets/fb.png'),),
+                          ),
                         ),
                       ],
                     ),
